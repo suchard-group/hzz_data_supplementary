@@ -21,7 +21,7 @@ ant
 ```
 Then under `beast-mcmc/build/dist/` you can find the `jar` files: `beast.jar`, `beauti.jar` and `trace.jar`.
 ### Reproducing the analyses
-You may use the following commands for the applications (HIV-1, H1, N1, _Aquilegia_ flower) as described in the manuscript. The output log files with ''corr'' and ''latent'' in their file names contain the MCMC samples for across-trait covariance elements and latent parameters, respectively. Columns "varianceMatrix" and "precisionMatrix"  
+You may use the following commands for the applications (HIV-1, H1, N1, _Aquilegia_ flower) as described in the manuscript. The output log files with ''corr'' and ''latent'' in their file names contain the MCMC samples for across-trait covariance elements and latent parameters, respectively. Columns "varianceMatrix" and "precisionMatrix" contain samples for across-trait covariance and precision elements.   
 * HIV-1
 	```
     java -Xmx10000m -Djava.library.path=/usr/local/lib:where_zigzag_is_located/build -jar where_beast_is_git_cloned/beast-mcmc/build/dist/beast.jar -beagle_order 1 -seed 666 -overwrite where_this_repository_is_stored/xml/HIV/hiv.xml
